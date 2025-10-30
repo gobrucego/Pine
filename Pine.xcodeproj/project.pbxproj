@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -92,6 +92,8 @@
 		DFFBB67B2EB2F81A000DC527 /* Highlightr in Frameworks */ = {isa = PBXBuildFile; productRef = DFFBB67A2EB2F81A000DC527 /* Highlightr */; };
 		DFFBB67E2EB2FE6E000DC527 /* cmark-gfm-swift in Frameworks */ = {isa = PBXBuildFile; productRef = DFFBB67D2EB2FE6E000DC527 /* cmark-gfm-swift */; };
 		DFFBB6812EB30753000DC527 /* cmark-gfm-swift in Frameworks */ = {isa = PBXBuildFile; productRef = DFFBB6802EB30753000DC527 /* cmark-gfm-swift */; };
+		DFFBB6842EB33060000DC527 /* cmark-gfm-swift in Frameworks */ = {isa = PBXBuildFile; productRef = DFFBB6832EB33060000DC527 /* cmark-gfm-swift */; };
+		DFFBB6872EB33106000DC527 /* cmark-gfm-swift in Frameworks */ = {isa = PBXBuildFile; productRef = DFFBB6862EB33106000DC527 /* cmark-gfm-swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -210,7 +212,9 @@
 			files = (
 				DFFBB67B2EB2F81A000DC527 /* Highlightr in Frameworks */,
 				DFFBB6812EB30753000DC527 /* cmark-gfm-swift in Frameworks */,
+				DFFBB6842EB33060000DC527 /* cmark-gfm-swift in Frameworks */,
 				DFFBB67E2EB2FE6E000DC527 /* cmark-gfm-swift in Frameworks */,
+				DFFBB6872EB33106000DC527 /* cmark-gfm-swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,7 +631,7 @@
 			mainGroup = A156AF742090606C0098BBDD;
 			packageReferences = (
 				DFFBB6792EB2F81A000DC527 /* XCRemoteSwiftPackageReference "Highlightr" */,
-				DFFBB67F2EB30753000DC527 /* XCLocalSwiftPackageReference "../cmark-gfm-swift" */,
+				DFFBB6852EB33106000DC527 /* XCRemoteSwiftPackageReference "cmark-gfm-swift" */,
 			);
 			productRefGroup = A156AF7E2090606C0098BBDD /* Products */;
 			projectDirPath = "";
@@ -1109,13 +1113,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		DFFBB67F2EB30753000DC527 /* XCLocalSwiftPackageReference "../cmark-gfm-swift" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../cmark-gfm-swift";
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		DFFBB6792EB2F81A000DC527 /* XCRemoteSwiftPackageReference "Highlightr" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -1123,6 +1120,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.3.0;
+			};
+		};
+		DFFBB6852EB33106000DC527 /* XCRemoteSwiftPackageReference "cmark-gfm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gobrucego/cmark-gfm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1139,6 +1144,15 @@
 		};
 		DFFBB6802EB30753000DC527 /* cmark-gfm-swift */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = "cmark-gfm-swift";
+		};
+		DFFBB6832EB33060000DC527 /* cmark-gfm-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "cmark-gfm-swift";
+		};
+		DFFBB6862EB33106000DC527 /* cmark-gfm-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFFBB6852EB33106000DC527 /* XCRemoteSwiftPackageReference "cmark-gfm-swift" */;
 			productName = "cmark-gfm-swift";
 		};
 /* End XCSwiftPackageProductDependency section */

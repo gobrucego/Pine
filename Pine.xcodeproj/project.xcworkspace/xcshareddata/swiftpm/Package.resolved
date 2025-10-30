@@ -1,6 +1,15 @@
 {
-  "originHash" : "1c4a0408e147d5ac52534eb3fe48788a771c7f481fddd30b1aaf1a4267800706",
+  "originHash" : "2436dcbda732b9c0ab01d9fcb21d976a1ac58c9a5cfdac1ed6f2bbb428ca5a3c",
   "pins" : [
+    {
+      "identity" : "cmark-gfm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gobrucego/cmark-gfm-swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "76bb25ea443904f0c3d17d967cf16be08706c4f4"
+      }
+    },
     {
       "identity" : "highlightr",
       "kind" : "remoteSourceControl",
